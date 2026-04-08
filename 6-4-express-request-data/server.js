@@ -167,6 +167,9 @@ app.get("/users/:userId", (req, res) => {
 });
 
 // Start the server by listening
+app.get("/", (req, res) => {
+  res.send("Server is out");
+});
 app.listen(3000, () => {
   console.log("API running at http://localhost:3000");
 });
